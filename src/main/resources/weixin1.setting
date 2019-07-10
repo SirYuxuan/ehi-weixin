@@ -1,0 +1,11 @@
+# 鉴权信息
+[auth]
+appId=wx82424255a63aa5f5
+appSecret=f7e1cd22b8100c809132afe6db9d1f99
+[config]
+# 接口域名,默认=currency
+# 开发者可以根据自己的服务器部署情况，选择最佳的接入点（延时更低，稳定性更高）。除此之外，可以将其他接入点用作容灾用途，当网络链路发生故障时，可以考虑选择备用接入点来接入。
+# 取值范围 通用域名(currency),通用异地容灾域名(disasterRecovery),上海域名(shangHai),深圳域名(shenZhen),香港域名(xiangGang)
+doMain=currency
+# 接口配置信息,用于响应微信认证
+token=yuxuan

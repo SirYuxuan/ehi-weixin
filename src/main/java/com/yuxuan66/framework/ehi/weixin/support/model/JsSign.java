@@ -3,7 +3,7 @@ package com.yuxuan66.framework.ehi.weixin.support.model;
 import lombok.Data;
 
 @Data
-public class Sign {
+public class JsSign {
 	/**
 	 * appid
 	 */
