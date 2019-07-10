@@ -1,0 +1,12 @@
+# 公众平台接口域名
+[domain]
+# 通用域名
+currency=https://api.weixin.qq.com/
+# 通用异地容灾域名
+disasterRecovery=https://api2.weixin.qq.com/
+# 上海域名
+shangHai=https://sh.api.weixin.qq.com/
+# 深圳域名
+shenZhen=https://sz.api.weixin.qq.com/
+# 香港域名
+xiangGang=https://hk.api.weixin.qq.com/
