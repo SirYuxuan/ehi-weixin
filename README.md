@@ -64,21 +64,21 @@ Ehi-Weixin是一个基于微信SDK封装的工具包,不依赖任何容器,Web�
 <dependency>
     <groupId>com.yuxuan66</groupId>
     <artifactId>ehi-weixin</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 </dependency>
 ```
 
 ### Gradle
 ```
-compile 'com.yuxuan66:ehi-weixin:0.0.2'
+compile 'com.yuxuan66:ehi-weixin:0.0.3'
 ```
 
 ### 非Maven项目
 
 点击以下任一链接，下载`ehi-weixin-X.X.X.jar`即可：
 
-- [Maven中央库1](https://repo1.maven.org/maven2/com/yuxuan66/ehi-weixin/0.0.2/)
-- [Maven中央库2](http://repo2.maven.org/maven2/com/yuxuan66/ehi-weixin/0.0.2/)
+- [Maven中央库1](https://repo1.maven.org/maven2/com/yuxuan66/ehi-weixin/0.0.3/)
+- [Maven中央库2](http://repo2.maven.org/maven2/com/yuxuan66/ehi-weixin/0.0.3/)
 
 > 注意
 > EhiWeixin支持JDK8+，对Android平台没有测试，不能保证所有工具类获工具方法可用。
@@ -95,6 +95,51 @@ mvn clean install
 
 -------------------------------------------------------------------------------
 
+
+# Changelog
+
+-------------------------------------------------------------------------------------------------------------
+
+## 0.0.2
+
+### 新特性
+* 【EhiWeixin】      获取唯一实例->public static EhiWeixin getInstance();
+* 【EhiWeixin】      获取Token->public Token getToken();
+* 【EhiWeixin】      获取JSApiTicket->public JSApiTicket getJSApiTicket();
+* 【EhiWeixin】      刷新AccessToken->public Token refreshToken(boolean force);
+* 【EhiWeixin】      刷新JSApiTicket->public JSApiTicket refreshJSApiTicket(boolean force);
+* 【EhiWeixin::WeixinUtil】      通过URL获取JS调用签名->public static Sign getJsSign(String url);      
+
+### Bug修复
+
+-------------------------------------------------------------------------------------------------------------
+
+## 0.0.3
+
+### 新特性
+* 【EhiWeixin】      初始化构建系统->EhiWeixin.builder();
+系统启动时需要调用此方法进行初始化,如:这是一个SpringBoot的例子
+```
+public static void main(String[] args) {
+		EhiWeixin.builder();
+		SpringApplication application = new SpringApplication(EhiWeixin.class);
+		application.setBannerMode(Banner.Mode.OFF);
+		application.run(args);
+}
+```
+PS:如不进行初始化,可能会导致其他方法出错
+* 【EhiWeixin】      获取AccessToken->public static String getAccessToken();
+* 【EhiWeixin】      获取JsTicket->public static String getJsTicket();
+* 【EhiWeixin】      删除公众号菜单->public static void delMenu();
+* 【EhiWeixin】      获取公众号菜单列表->public static List<Menu> getMenu();
+* 【EhiWeixin】      添加微信菜单->public static void addMenu(List<Menu> menus);
+* 【EhiWeixin】      微信服务接口校验->public static String checkServerToken(Map<String, Object> param);
+* 【EhiWeixin】      通过URL获取JS调用签名->public static JsSign getJsSign(String url);
+
+### Bug修复
+* 修复了Token和Ticket缓存逻辑,保证能随时获取正确的数据
+
+-------------------------------------------------------------------------------
 ## 添砖加瓦
 
 ### 提供bug反馈或建议
