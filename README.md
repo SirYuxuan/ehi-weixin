@@ -2,22 +2,35 @@
 
 #### 介绍
 Ehi-Weixin 提供微信的各种封装方法
+项目不依赖Spring，Spring MVC等容器或web框架。纯jar项目提供丰富的api供调用
+项目内使用定时器维护token,ticket等。
 
 #### 软件架构
 软件架构说明
-
+依赖:
+hutool-all
+lombok
 
 #### 安装教程
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. 
+`<dependency>
+			<groupId>com.yuxuan66</groupId>
+			<artifactId>ehi-weixin</artifactId>
+			<version>0.0.2</version>
+		</dependency>`
+
 
 #### 使用说明
+1. 目前已实现 token,ticket的维护,js sign的计算，
+2. EhiWeixin 为系统内重量级对象提供所有的微信工具方法
+3. EhiWeixin ehiWeixin = EhiWeixin.getInstance();//可返回唯一的EhiWeixin实例
+4. JSApiTicket jsApiTicket = ehiWeixin.getJSApiTicket();//返回Js Ticket
+5. Token token = ehiWeixin.getToken();//返回access token
+6. Sign sign = ehiWeixin.getJsSign(String url);//根据被授权的url返回签名
 
-1. xxxx
-2. xxxx
-3. xxxx
+当前为开发测试版本,系统将不断迭代,提供完善的微信操作相关方法。
+
 
 #### 参与贡献
 
@@ -26,12 +39,4 @@ Ehi-Weixin 提供微信的各种封装方法
 3. 提交代码
 4. 新建 Pull Request
 
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+技术交流群:875477818
