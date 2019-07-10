@@ -119,7 +119,7 @@ mvn clean install
 ### 新特性
 * 【EhiWeixin】      初始化构建系统->EhiWeixin.builder();
 系统启动时需要调用此方法进行初始化,如:这是一个SpringBoot的例子
-```
+```java
 public static void main(String[] args) {
 		EhiWeixin.builder();
 		SpringApplication application = new SpringApplication(EhiWeixin.class);
