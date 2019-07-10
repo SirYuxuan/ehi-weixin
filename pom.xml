@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.yuxuan66</groupId>
 	<artifactId>ehi-weixin</artifactId>
-	<version>0.0.2</version>
+	<version>0.0.3</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdk.source.version>1.8</jdk.source.version>
