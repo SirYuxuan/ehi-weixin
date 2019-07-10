@@ -85,7 +85,7 @@ compile 'com.yuxuan66:ehi-weixin:0.0.2'
 
 ### 编译安装
 
-访问Hutool的码云主页：[https://gitee.com/siryuxuan/ehi-weixin](https://gitee.com/siryuxuan/ehi-weixin) 下载整个项目源码 然后进入EhiWeixin项目目录执行：
+访问EhiWeixin的码云主页：[https://gitee.com/siryuxuan/ehi-weixin](https://gitee.com/siryuxuan/ehi-weixin) 下载整个项目源码 然后进入EhiWeixin项目目录执行：
 
 ```sh
 mvn clean install
