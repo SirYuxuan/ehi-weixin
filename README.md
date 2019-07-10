@@ -11,9 +11,12 @@ Ehi-Weixin 提供微信的各种封装方法
 hutool-all
 lombok
 
-#### 安装教程
+## 安装
 
-```
+### Maven
+在项目的pom.xml的dependencies中加入以下内容:
+
+```xml
 <dependency>
     <groupId>com.yuxuan66</groupId>
     <artifactId>ehi-weixin</artifactId>
@@ -21,10 +24,20 @@ lombok
 </dependency>
 ```
 
+### Gradle
+```
+compile 'com.yuxuan66:ehi-weixin:0.0.2'
+```
 
-```
-这里输入代码
-```
+### 非Maven项目
+
+点击以下任一链接，下载`ehi-weixin-X.X.X.jar`即可：
+
+- [Maven中央库1](https://repo1.maven.org/maven2/com/yuxuan66/ehi-weixin/0.0.2/)
+- [Maven中央库2](http://repo2.maven.org/maven2/com/yuxuan66/ehi-weixin/0.0.2/)
+
+> 注意
+> ehi-weixin支持JDK8+，对Android平台没有测试，不能保证所有工具类获工具方法可用。
 
 #### 使用说明
 ```
@@ -39,11 +52,8 @@ lombok
 当前为开发测试版本,系统将不断迭代,提供完善的微信操作相关方法。
 
 
-#### 参与贡献
+### 提供bug反馈或建议
 
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+- [码云Gitee](https://gitee.com/siryuxuan/ehi-weixin/issues)
 
 技术交流群:875477818
