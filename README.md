@@ -8,8 +8,8 @@ Ehi-Weixin 提供微信的各种封装方法
 #### 软件架构
 软件架构说明
 依赖:
-hutool-all
-lombok
+- hutool-all
+- lombok
 
 ## 安装
 
