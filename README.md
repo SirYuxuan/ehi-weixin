@@ -13,7 +13,6 @@ lombok
 
 #### 安装教程
 
-1. 
 ```
 <dependency>
     <groupId>com.yuxuan66</groupId>
@@ -22,6 +21,10 @@ lombok
 </dependency>
 ```
 
+
+```
+这里输入代码
+```
 
 #### 使用说明
 ```
