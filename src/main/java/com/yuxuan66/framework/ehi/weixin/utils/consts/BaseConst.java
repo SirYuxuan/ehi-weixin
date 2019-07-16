@@ -6,7 +6,7 @@ public interface BaseConst {
 	/**
 	 * 核心配置文件
 	 */
-	Setting setting = new Setting("weixin1.setting");
+	Setting setting = new Setting("weixin.setting");
 	/**
 	 * 接口域名配置,由系统提供此配置文件
 	 */
